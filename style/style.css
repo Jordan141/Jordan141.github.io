@@ -580,7 +580,7 @@ header.nav-open {
  -khtml-user-select: none;    /* Konqueror */
  -moz-user-select: none;      /* Firefox */
  -ms-user-select: none;       /* Internet Explorer/Edge */
- user-select: none;  
+ user-select: none;
 }
 .banner .banner-wrap {
   position: absolute;
@@ -763,7 +763,7 @@ header.nav-open {
 }
 #bottom-arrow:after {
 
-  content: "\e812";
+  content: "▼";
 }
 #bottom-arrow:hover {
   color: #ffffff;
