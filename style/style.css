@@ -1422,7 +1422,7 @@ ul.our-process li:nth-child(5) h4 {
   margin-top: 20px;
 }
 .list-block li .image .hover .centered .arrow:before {
-  content: "\e813";
+  content: "✓";
 }
 .list-block li .image .hover .centered .top {
   margin-bottom: 70px;
@@ -1464,7 +1464,7 @@ ul.our-process li:nth-child(5) h4 {
   border-bottom: 2px solid #ffffff;
 }
 .list-block li .content .read-more:before {
-  content: "\e813";
+  content: "✓";
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -1728,7 +1728,7 @@ ul.our-process li:nth-child(5) h4 {
 .forward:after {
   color: #d00030;
   font-weight: normal;
-  content: "\e813";
+  content: "✓";
   margin-left: 10px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
