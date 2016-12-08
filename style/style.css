@@ -99,7 +99,8 @@ body {
   font-weight: normal;
   font-style: normal;
   -webkit-smoothing: antialiased;
-  overflow:hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: "proxima-nova", sans-serif;
 }
 hr {
