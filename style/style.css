@@ -762,7 +762,7 @@ header.nav-open {
   transition: all 0.5s ease;
 }
 #bottom-arrow:after {
-  content: "\2B9F";
+  content: "▼";
 }
 #bottom-arrow:hover {
   color: #ffffff;
