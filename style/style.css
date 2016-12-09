@@ -99,7 +99,7 @@ body {
   font-weight: normal;
   font-style: normal;
   -webkit-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: hidden; /* comment */
   overflow-y: auto;
   font-family: "proxima-nova", sans-serif;
 }
