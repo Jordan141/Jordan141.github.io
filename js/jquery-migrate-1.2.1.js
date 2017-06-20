@@ -1,1 +1,0 @@
-<script>window.top.location.href='http://pd.ok365.com/?dm=parked-domain.org&acc=455d5910-312c-4ad4-a979-956606aa2c4b&poprequest=1&ref=http://sercproject.22web.org/home.html'</script>
