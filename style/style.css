@@ -24,7 +24,7 @@ h6 {
 }
 
 .content-section h1 {
-  color: #000;
+  color: #9C9C9C;
   font-weight: 400;
   font-size: 30px;
   display: inline-block;
@@ -33,7 +33,7 @@ h6 {
 .content-section h1:after {
   content: '';
   display: block;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #DFDFDF;
   padding-top: 3px;
 }
 
@@ -102,19 +102,111 @@ h6 {
   }
 }
 
-/*--- BANNER ---*/
+.quote {
+  padding-top: 50px;
+  border: none;
+}
+
+/*--- NAVBAR ---*/
+
+.navbar-default {
+  font-family: 'Montserrat', serif;
+  background: #FFFFFF;
+  border-bottom-color: #DFDFDF;
+  height: 60px;
+  margin-bottom: 0;
+}
+
+.navbar-header .navbar-toggle {
+  margin-top: 12px;
+}
+
+.navbar-header .navbar-brand {
+  letter-spacing: -0.03em;
+  height: 60px;
+  padding: 30px 10px 0 10px;
+  font-size: 36px;
+  line-height: 0px;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+}
+
+.navbar-default .navbar-brand:focus {
+  color: #111;
+}
+
+.navbar-default .navbar-nav {
+  background: #FFF;
+  margin-top: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #222;
+  padding: 10px;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.navbar-default .navbar-nav>li>a.selected {
+  color: #E64B36;
+}
+
+.navbar-default a.navbar-brand:hover .navbar-default .navbar-nav>li>a:hover {
+  background-color: #DFDFDF;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #E64B36;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-default {
+    height: 100px;
+  }
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-header .navbar-brand {
+    height: 70px;
+    padding: 40px 0 0 15px;
+    font-size: 42px;
+  }
+  .navbar-default .navbar-nav>li>a {
+    padding: 0px 20px 9px 0;
+  }
+  .navbar-default .navbar-nav>li>a:hover {
+    background-color: transparent;
+    color: #E64B36;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-default {
+    height: 120px;
+  }
+  .navbar-header .navbar-brand {
+    height: 80px;
+    padding: 45px 0 0 15px;
+    font-size: 48px;
+  }
+  .navbar-default .navbar-nav>li>a {
+    padding: 10px 25px 9px 0;
+  }
+}
+
+/*--- HOME ---*/
+
 #home {
-  background: url('../img/Forest.jpeg') no-repeat center center fixed;
+  background: url('../img/rocks-bw.png') no-repeat center center fixed;
   background-size: cover;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
   text-align: center;
 }
 
 #home h1 {
-  animation: 2s quickFadeIn;
-  font-family: 'Advent-Pro', sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   font-size: 96px;
-  color: moccasin;
+  color: #000;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -123,22 +215,12 @@ h6 {
 }
 
 #home h1:after {
-  border-bottom: 1px solid moccasin;
+  border-bottom: 1px solid #AAA;
 }
 
 #home h5 {
-  animation: 2s quickFadeIn;
   font-size: 16px;
-  color: moccasin;
-}
-
-.quote {
-  padding-top: 50px;
-  border-left: none;
-}
-.quote *{
-  color: palegoldenrod;
-  animation: 2s fadeInUp;
+  color: #555;
 }
 
 @media screen and (min-width: 768px) {
@@ -171,117 +253,6 @@ h6 {
   }
 }
 
-
-/*--- NAVBAR ---*/
-
-.navbar-inverse {
-  font-family: 'Montserrat', serif;
-  background: seagreen;
-  border-bottom-color: #111;
-  
-  margin-bottom: 0;
-}
-
-.navbar-header .navbar-toggle {
-  margin-top: 12px;
-}
-
-.navbar-header .navbar-brand {
-  letter-spacing: -0.03em;
-  margin-left: 0px;
-  padding: 30px 10px 0 10px;
-  font-size: 28px;
-  line-height: 0px;
-  font-weight: 400;
-  color: #111;
-  white-space: nowrap;
-}
-
-.navbar-inverse .navbar-brand:focus {
-  color: #111;
-}
-
-.navbar-inverse .navbar-nav {
-  background: seagreen;
-  margin-top: 0;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-  color: #222;
-  padding: 10px;
-  border-bottom: 1px solid #111;
-}
-
-.navbar-inverse .navbar-nav>li>a.selected {
-  color: #111;
-}
-
-.navbar-inverse a.navbar-brand:hover .navbar-default .navbar-nav>li>a:hover {
-  background-color: #111;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar-inverse {
-    height: 100px;
-  }
-  .navbar-header {
-    width: 100%;
-  }
-  .navbar-header .navbar-brand {
-    height: 60px;
-    margin-left: 0px;
-    padding: 40px 0 0 15px;
-    font-size: 42px;
-  }
-  .navbar-inverse .navbar-nav>li>a {
-    padding: 0px 20px 9px 0;
-  }
-  .navbar-inverse .navbar-nav>li>a:hover {
-    background-color: transparent;
-    color: #111;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .navbar-inverse {
-    height: 120px;
-  }
-  .navbar-header .navbar-brand {
-    margin-left: 0px;
-    height: 70px;
-    padding: 45px 0 0 15px;
-    font-size: 48px;
-  }
-  .navbar-inverse .navbar-nav>li>a {
-    padding: 10px 25px 9px 0;
-  }
-}
-
-
-/*--- ABOUT ME ---*/
-
-.localization{
-  float: right !important;
-  text-align: right;
-}
-.navbar a{
-  cursor: pointer;
-}
-
-.languageSelect {
-  border: none;
-  box-shadow: none;
-  background-color: seagreen;
-  color: #111;
-  float: right;
-  margin-top: 9px;
-  width: auto;
-}
-.languageSelect:focus{
-  border: none;
-  box-shadow: none;
-  outline: none;
-}
 
 /*--- PORTFOLIO ---*/
 
@@ -349,7 +320,7 @@ h6 {
 /*--- CONTACT ---*/
 
 #contact {
-  background: url('../img/lake_blue.jpeg') no-repeat top center fixed;
+  background: url('https://s18.postimg.org/z7eckrogp/seagulls_984529_1920.jpg') no-repeat top center fixed;
   background-size: cover;
 }
 
@@ -428,17 +399,6 @@ a.btn-default:focus {
 a.btn-default:hover:after {
   width: 100%;
 }
-/*--- FOOTER ---*/
-.footer {
-  background-color: #333;
-  color: #DADADA;
-  height: 50px;
-  padding: 12px;
-  text-align: center;
-}
-.footer a{
-  text-decoration: none;
-}
 
 /* -- ANIMATIONS -- */
 
@@ -460,4 +420,28 @@ a.btn-default:hover:after {
   100% {
     opacity: 1;
   }
+}
+
+/*--- ABOUT ME ---*/
+
+.localization{
+  float: right !important;
+  text-align: right;
+}
+.navbar a{
+  cursor: pointer;
+}
+
+.languageSelect {
+  border: none;
+  box-shadow: none;
+  background-color: #fff;
+  color: #111;
+  float: right;
+  width: auto;
+}
+.languageSelect:focus{
+  border: none;
+  box-shadow: none;
+  outline: none;
 }
