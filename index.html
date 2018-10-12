@@ -1,27 +1,40 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <link href='https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic|Montserrat:400,700|Cardo:400italic|Advent+Pro:100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style/font-awesome.min.css">
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="alphabet.js"></script>
   </head>
   <body>
-    <div class="wrapper"></div>
+	<div class="outer">
+		<div class="middle">
+			<div class="inner">
+				<h2> Hey there! We're currently undergoing some redevelopment.
+				<canvas id="myCanvas"></canvas>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="bubbles.js"></script>
+	<script type="text/javascript" src="main.js"></script>
   </body>
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  <script src="bundle.js"></script>
 </html>
-<script>
-$(document).ready(function(){ 
-	$(".scroll").click(function(event){
-		event.preventDefault();
-		$("html,body").animate({scrollTop:$(this.hash).offset().top}, 500);
-		$('.navbar-inverse a').removeClass('selected');
-		$(this).addClass('selected');
-    	});
-});
+<style>
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 
-</script>
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 1000px;
+  /*whatever width you want*/
+}
+</style>
